@@ -1,0 +1,16 @@
+﻿<Window x:Class="HslControl_Curve.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HslControl_Curve"
+        xmlns:hls="clr-namespace:HslControls;assembly=HslControls" 
+        xmlns:WPF="clr-namespace:HslControls.WPF;assembly=HslControls" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <WPF:HslCurve x:Name="hslCurveCLL"  ColorDashLines="#505050" ColorLinesAndText="Gray" Margin="0,20,0,0" VerticalAlignment="Top" Height="400" IsRenderRightCoordinate="False" TextAddFormat="HH:mm:ss" FontSize="12" IsAbscissaStrech="True" StrechDataCountMax="600" Width="700" IntervalAbscissaText="120" />
+        <Button x:Name="button" Content="开启" HorizontalAlignment="Left" Margin="79,465,0,0" VerticalAlignment="Top" Width="170" Height="44" FontSize="20" Click="button_Click"/>
+        <Button x:Name="button1" Content="关闭" HorizontalAlignment="Left" Margin="542,465,0,0" VerticalAlignment="Top" Width="170" Height="44" FontSize="20" Click="button1_Click"/>
+    </Grid>
+</Window>
